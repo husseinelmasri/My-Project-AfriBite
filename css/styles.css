@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 /*
 ---01 TYPOGRAPHY SYSTEM
 
@@ -18,7 +19,7 @@ Defaukt:1
 ---02 COLORS
 -Primary:#E63946
 -tints: #fad7da
--shades:
+-shades:#cf333f
 -accent:
 -greys:#555
 #333
@@ -44,7 +45,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Rubik', sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -81,6 +82,7 @@ body {
   display: inline-block;
   background-color: #e63946;
   font-size: 2rem;
+  font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   text-decoration: none;
@@ -116,4 +118,32 @@ body {
 
 .margin-right-sm {
   margin-right: 1.6rem;
+}
+
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+.delivered-img {
+  display: flex;
+}
+.delivered-img img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fad7da;
+}
+.delivered-img img:last-child {
+  margin: 0;
+}
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.delivered-text span {
+  color: #cf333f;
 }
