@@ -56,6 +56,7 @@ body {
   font-weight: 400;
   color: #555;
 }
+
 /*========================*/
 /*GENERAL REUSABLE COMPONENT*/
 /*========================*/
@@ -236,5 +237,8 @@ body {
 
 .section-how {
   padding: 9.6rem 0;
-  background-color: aqua;
+  background-color: #fad7da;
+}
+.step-img {
+  max-width: 50%;
 }
