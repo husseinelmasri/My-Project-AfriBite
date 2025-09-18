@@ -80,13 +80,22 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.heading-primary {
+.heading-primary,
+.heading-secondary {
   font-size: 5.2rem;
   font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  color: #333;
+  color: #2e0b0e;
+}
+.heading-primary {
   line-height: 1.05;
   color: #333;
   letter-spacing: -0.5px;
-  margin-bottom: 3.2rem;
 }
 .btn:link,
 .btn:visited {
@@ -237,7 +246,7 @@ body {
 
 .section-how {
   padding: 9.6rem 0;
-  background-color: #fad7da;
+  /* background-color: #fad7da; */
 }
 .step-img {
   max-width: 50%;
