@@ -160,3 +160,7 @@ body {
 .margin-right-sm {
   margin-right: 1.6rem;
 }
+
+strong {
+  font-weight: 500;
+}
