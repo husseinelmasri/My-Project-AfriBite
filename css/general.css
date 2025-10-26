@@ -89,6 +89,9 @@ body {
 .grid--center-v {
   align-items: center;
 }
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
 
 .grid:last-child {
   margin-bottom: 0;
