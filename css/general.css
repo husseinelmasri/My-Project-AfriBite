@@ -74,7 +74,7 @@ body {
 .grid {
   display: grid;
   gap: 6.4rem;
-  row-gap: 9.6;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .grid--2-cols {
@@ -135,6 +135,18 @@ body {
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
 }
+
+.btn--form:hover {
+  background-color: #fff !important;
+  color: #555;
+}
+.btn--form {
+  background-color: #770f17 !important;
+  color: #fff;
+  align-self: end;
+  padding: 1.2rem !important;
+}
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -144,6 +156,9 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
   /* transition: background-color 0.3s; */
   transition: all 0.3s;
 }
@@ -197,4 +212,9 @@ body {
 
 strong {
   font-weight: 500;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 57, 70, 0.5);
 }
