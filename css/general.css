@@ -73,8 +73,8 @@ body {
 
 .grid {
   display: grid;
-  gap: 6.4rem;
-  grid-template-columns: repeat(2, 1fr);
+  gap: 9.6rem;
+  /* grid-template-columns: repeat(2, 1fr); */
 }
 
 .grid--2-cols {
