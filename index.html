@@ -7,22 +7,37 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/queries.css">
+  <link rel="icon" href="img/Afribite logo.png">
+
+  <link rel="apple-touch-icon" href="img/Afribite logo.png">
+  <!-- 180x180 -->
+
+  <link rel="andriod-touch-icon" href="img/Afribite logo.png">
+  <!-- 192x192 -->
+
+  <link rel="andriod-touch-icon" href="img/Afribite logo.png">
+  <!-- 512x512 -->
+
+  <link rel="manifest" href="manifest.webmanifest">
+  <!--  to add the logos for andriod -->
+
+
   <title>AfriBite</title>
 </head>
 
 <body>
-  <header class="header ">
+  <header class="header">
     <a href="#">
       <img src="img/Afribite logo.png" alt="AfriBite logo" class="logo"></a>
     <nav class="main-nav">
       <ul class="main-nav-list">
-        <li><a href="#" class="main-nav-link">Home</a></li>
-        <li><a href="#" class="main-nav-link">About</a></li>
-        <li><a href="#" class="main-nav-link">How it works</a></li>
-        <li><a href="#" class="main-nav-link">Meals</a></li>
-        <li><a href="#" class="main-nav-link">Testimonials</a></li>
-        <li><a href="#" class="main-nav-link">Pricing</a></li>
-        <li><a href="#" class="main-nav-link nav-cta">Contact</a></li>
+
+
+        <li><a href="#how" class="main-nav-link">How it works</a></li>
+        <li><a href="#meals" class="main-nav-link">Meals</a></li>
+        <li><a href="#testimonials" class="main-nav-link">Testimonials</a></li>
+        <li><a href="#pricing" class="main-nav-link">Pricing</a></li>
+        <li><a href="#cta" class="main-nav-link nav-cta">Try For Free</a></li>
       </ul>
     </nav>
     <button class="btn-mobile-nav">
@@ -43,8 +58,8 @@
             nutrition.
             Tailored to your taste, freshly cooked with love and delivered daily.
           </p>
-          <a href="#" class="btn btn--full margin-right-sm">Start eating well</a>
-          <a href="#" class="btn btn--outline">Learn More &darr;</a>
+          <a href="#cta" class="btn btn--full margin-right-sm">Start eating well</a>
+          <a href="#how" class="btn btn--outline">Learn More &darr;</a>
           <div class="delivered-meals">
             <div class="delivered-img">
               <img src="img/customers/1.jpg" alt="Customer photo">
@@ -59,7 +74,14 @@
           </div>
         </div>
         <div class="hero-img-box">
+
+          <source srcset="img/hero.png" type="img/webp">
+          <source srcset="img/hero.png" type="img/webp">
+          <!-- the above should have 2 different formats so that it can work on all browers -->
           <img src="img/hero.png" alt="some meals images from afribite" class="hero-img">
+
+          </picture>
+
         </div>
       </div>
     </section>
@@ -77,7 +99,7 @@
 
       </div>
     </section>
-    <section class="section-how ">
+    <section class="section-how" id="how">
       <div class=" container">
         <span class="subheading">How it works</span>
         <h2 class="heading-secondary">
@@ -131,7 +153,7 @@
         </div>
       </div>
     </section>
-    <section class="section-meals">
+    <section class="section-meals" id="meals">
       <div class="container center-text">
         <span class="subheading">Meals</span>
         <h2 class="heading-secondary">
@@ -220,7 +242,7 @@
           Once you try it, you can't go back
         </h2>
 
-        <div class="testimonials">
+        <div class="testimonials" id="testimonials">
 
           <figure class="testimonial">
             <img class="testimonial-img" src="img/customers/1.jpg" alt="photo of customer">
@@ -311,7 +333,7 @@
 
     </section>
 
-    <section class="section-pricing">
+    <section class="section-pricing" id="pricing">
       <div class="container">
         <span class="subheading">Pricing</span>
         <h2 class="heading-secondary">
@@ -414,7 +436,7 @@
 
         </div>
     </section>
-    <section class="section-cta">
+    <section class="section-cta" id="cta">
       <div class="container">
         <div class="cta">
 
@@ -484,7 +506,7 @@
           </li>
         </ul>
 
-        <p class="copyright">Copyright &copy; 2027 by AfriBite, Inc. All rights reserved</p>
+        <p class="copyright">Copyright &copy;<span class="year">2027</span> by AfriBite, Inc. All rights reserved</p>
       </div>
       <div class="address-col">
         <p class="footer-heading">Contact Us</p>
@@ -533,6 +555,7 @@
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
